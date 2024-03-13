@@ -148,18 +148,24 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg/1101px-Microsoft_Office_Excel_%282019%E2%80%93present%29.svg.png" alt="Excel Icon" class="excel-icon">
                         Dra och släpp din excelfil här eller klicka för att välja en fil
                     </label>
+                    <!-- Descriptive text -->
+                    <p class="upload-description">Ladda upp din Verifone-datafil för jämförelse.</p>
                 </div>
             </div>
-            <div class="upload-box">
-                <div class="upload-title">Backoffice</div>
-                <div id="drag-drop-area2" class="drag-drop-area" ondrop="drop(event)" ondragover="allowDrop(event)">
-                    <input type="file" id="file2" name="file2" style="display: none;" onchange="fileSelected(event)">
-                    <label for="file2" class="drag-drop-area-text">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg/1101px-Microsoft_Office_Excel_%282019%E2%80%93present%29.svg.png" alt="Excel Icon" class="excel-icon">
-                        Dra och släpp din excelfil här eller klicka för att välja en fil
-                    </label>
-                </div>
-            </div>
+            <!-- Backoffice -->
+<div class="upload-box">
+    <div class="upload-title">Backoffice</div>
+    <div id="drag-drop-area2" class="drag-drop-area" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <input type="file" id="file2" name="file2" style="display: none;" onchange="fileSelected(event)">
+        <label for="file2" class="drag-drop-area-text">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg/1101px-Microsoft_Office_Excel_%282019%E2%80%93present%29.svg.png" alt="Excel Icon" class="excel-icon">
+            Dra och släpp din excelfil här eller klicka för att välja en fil
+        </label>
+        <!-- Descriptive text -->
+        <p class="upload-description">Ladda upp din Backoffice-datafil för jämförelse.</p>
+    </div>
+</div>
+
         </div>
 
         <div class="form-group">
