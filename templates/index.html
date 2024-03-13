@@ -19,7 +19,7 @@
             background-color: #4530C9;
             padding: 20px;
             display: flex;
-            justify-content: flex-start;
+            justify-content: space-between; /* Updated */
         }
 
         .navbar-custom .nav-link {
@@ -131,11 +131,18 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
-            <a class="navbar-brand" href="#" target="_blank">
-                <img src="https://cloud.caspeco.se/assets/img/caspeco_white.svg" alt="Caspeco Logo" height="30">
-            </a>
+            <div class="container-fluid">
+                <a class="navbar-brand" href="https://caspertool-1c444d4db2ef.herokuapp.com/">
+                    <button class="btn btn-outline-light mr-2">Back</button>
+                </a>
+                <a class="navbar-brand ml-auto" href="#">
+                    <img src="https://cloud.caspeco.se/assets/img/caspeco_white.svg" alt="Caspeco Logo" height="30">
+                </a>
+            </div>
         </nav>
     </header>
+    
+    
 
     <main class="container">
         <h3 class="mb-4 section-title">Försäljningsjämförelse</h3>
