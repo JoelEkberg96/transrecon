@@ -10,30 +10,33 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
-            padding: 6rem 1rem 1rem;
+            padding-top: 6rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            padding-bottom: 1rem;
             background-color: #f8f9fa;
             font-family: 'Roboto', sans-serif;
         }
-
         .navbar-custom {
             background-color: #4530C9;
-            padding: 20px;
-            display: flex;
-            justify-content: space-between; /* Updated */
+            padding-top: 20px;
+            padding-bottom: 20px;
+            height: 80px; /* Added fixed height */
         }
-
         .navbar-custom .nav-link {
             color: #ffffff !important;
+         }
+         .navbar-custom .nav-link:hover {
+            color: #e6e6e6 !important;
         }
-
         .container {
             background: white;
             padding: 2rem;
-            border: 1px solid #ccc;
+            border: 1px solid #ccc; /* Add a solid border */
             border-radius: 0.5rem;
             box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05);
             max-width: 1000px;
-            margin: 0 auto;
+            margin: 1 auto;
         }
 
         .upload-box {
@@ -98,10 +101,11 @@
         }
 
         .btn-primary {
+            margin-top: 1rem;
             background-color: #0269FF;
             border: none;
-            border-radius: 5rem;
-            padding: 1rem 2rem;
+            padding-left: 2rem;
+            border-radius: 5rem; /* Add border-radius for rounder corners */
         }
 
         .btn-primary:hover,
@@ -125,6 +129,36 @@
                 opacity: 0;
             }
         }
+
+        @media (max-width: 992px) {
+            .icon-link img {
+                width: 120px;
+                height: 120px;
+            }
+            .icon-link p {
+                font-size: 18px;
+            }
+            .desc-text {
+                font-size: 12px;
+            }
+        }
+    
+        @media (max-width: 576px) {
+            .icon-link {
+                flex-basis: calc(50% - 20px);
+                max-width: calc(50% - 20px);
+            }
+            .icon-link img {
+                width: 100px;
+                height: 100px;
+            }
+            .icon-link p {
+                font-size: 16px;
+            }
+            .desc-text {
+                font-size: 12px;
+            }
+        }
     </style>
 </head>
 
@@ -135,7 +169,7 @@
                 <a class="navbar-brand" href="https://caspertool-1c444d4db2ef.herokuapp.com/">
                     <button class="btn btn-outline-light mr-2">Back</button>
                 </a>
-                <a class="navbar-brand ml-auto" href="#">
+                <a class="navbar-brand ml-auto order-2" href="https://www.caspeco.se/" target="_blank">
                     <img src="https://cloud.caspeco.se/assets/img/caspeco_white.svg" alt="Caspeco Logo" height="30">
                 </a>
             </div>
